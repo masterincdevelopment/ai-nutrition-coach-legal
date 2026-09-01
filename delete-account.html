@@ -1,97 +1,67 @@
 <!doctype html>
-<html lang="it">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
-  <title>Elimina account | AI Nutrition Coach</title>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 850px;
-      margin: auto;
-      padding: 28px;
-      line-height: 1.65;
-      color: #1f2937;
-    }
-
-    h1,
-    h2 {
-      color: #0b4f34;
-    }
-
-    .box {
-      background: #f2f8f4;
-      border: 1px solid #d8e8dd;
-      border-radius: 14px;
-      padding: 20px;
-      margin: 18px 0;
-    }
-
-    a {
-      color: #157347;
-    }
-  </style>
-</head>
-
-<body>
-
-  <h1>Eliminazione dell’account e dei dati</h1>
-
-  <p>
-    AI Nutrition Coach – Titolare: Leonardo Genna
-  </p>
-
-  <div class="box">
-    <h2>Dall’app</h2>
-
-    <ol>
-      <li>Accedi all’account.</li>
-      <li>Apri <strong>Profilo</strong>.</li>
-      <li>Seleziona <strong>Elimina account</strong>.</li>
-      <li>Inserisci la password e conferma.</li>
-    </ol>
-
-    <p>
-      La procedura elimina l’account Firebase e i dati associati presenti
-      nel profilo, nelle sottoraccolte e nelle raccolte amministrate dal
-      backend, comprese cache AI, conteggi di utilizzo, voti, suggerimenti,
-      token notifiche e collegamenti tecnici agli acquisti.
-    </p>
-  </div>
-
-  <div class="box">
-    <h2>Senza accesso all’app</h2>
-
-    <p>
-      Invia un’email dall’indirizzo collegato all’account a
-      <a href="mailto:aimealplannerpro@gmail.com?subject=Eliminazione%20account%20AI%20Nutrition%20Coach">
-        aimealplannerpro@gmail.com
-      </a>
-      con oggetto “Eliminazione account AI Nutrition Coach”.
-      Potremo chiedere informazioni limitate per verificare l’identità.
-      La richiesta viene gestita, di norma, entro un mese.
-    </p>
-  </div>
-
-  <h2>Dati eventualmente conservati</h2>
-
-  <p>
-    Possono essere conservate esclusivamente informazioni minime quando
-    richiesto dalla legge o necessario per contabilità, contestazioni,
-    sicurezza e prevenzione delle frodi, per il relativo periodo applicabile.
-    I dati sanitari e i contenuti personali dell’app non vengono conservati
-    per tali finalità.
-  </p>
-
-  <p>
-    <a href="privacy-policy.html">
-      Consulta l’informativa privacy
-    </a>.
-  </p>
-
-</body>
-
-</html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Eliminazione account | AI Nutrition Coach</title>
+<style>*{box-sizing:border-box}body{font-family:Arial,sans-serif;margin:0;background:#f7faf8;color:#1f2937;line-height:1.65}header{background:linear-gradient(135deg,#0b4f34,#157347);color:#fff;padding:36px 20px}.wrap,main{max-width:900px;margin:auto}.wrap{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap}h1{margin:0}select{font:inherit;padding:9px;border-radius:10px}.label{font-weight:bold}main{padding:28px 20px 60px}.card{background:#fff;border:1px solid #dfe7e2;border-radius:16px;padding:22px;margin-bottom:16px}h2{color:#0b4f34;margin-top:0}a{color:#157347}[dir=rtl]{text-align:right}</style></head>
+<body><header><div class="wrap"><div><h1 id="title"></h1><div id="subtitle"></div></div><div><div class="label" id="label"></div><select id="lang"><option value="it">Italiano</option><option value="en">English</option><option value="es">Español</option><option value="fr">Français</option><option value="de">Deutsch</option><option value="zh">中文</option><option value="pt">Português</option><option value="sv">Svenska</option><option value="ar">العربية</option><option value="ru">Русский</option><option value="ja">日本語</option></select></div></div></header><main id="content"></main>
+<script>
+const mail='<a href="mailto:aimealplannerpro@gmail.com?subject=Eliminazione%20account%20AI%20Nutrition%20Coach">aimealplannerpro@gmail.com</a>',privacy='<a href="privacy-policy.html">';
+const P={
+it:['Eliminazione dell’account e dei dati','AI Nutrition Coach – Titolare: Leonardo Genna','Lingua',[
+['Eliminazione dall’app','<ol><li>Accedi al tuo account.</li><li>Apri <b>Profilo</b>.</li><li>Seleziona <b>Elimina account</b>.</li><li>Inserisci la password e conferma.</li></ol>'],
+['Cosa viene eliminato','La procedura elimina l’account Firebase e i dati associati presenti nel profilo, nelle sottoraccolte e nelle raccolte amministrate dal backend, comprese cache AI, conteggi di utilizzo, piani, cronologia, voti, suggerimenti, token notifiche e collegamenti tecnici agli acquisti. L’operazione è definitiva.'],
+['Senza accesso all’app',`Invia un’email dall’indirizzo associato all’account a ${mail}, con oggetto “Eliminazione account AI Nutrition Coach”. Potremo chiedere informazioni limitate per verificare l’identità. La richiesta viene gestita, di norma, entro un mese.`],
+['Eventuale conservazione',`Possono essere conservate soltanto informazioni minime quando richiesto dalla legge o necessario per contabilità, contestazioni, sicurezza e prevenzione delle frodi, per il periodo applicabile. I dati sanitari e i contenuti personali non vengono conservati per tali finalità. ${privacy}Consulta l’informativa privacy</a>.`]]],
+en:['Account and data deletion','AI Nutrition Coach – Controller: Leonardo Genna','Language',[
+['Delete in the app','<ol><li>Sign in to your account.</li><li>Open <b>Profile</b>.</li><li>Select <b>Delete account</b>.</li><li>Enter your password and confirm.</li></ol>'],
+['What is deleted','The procedure deletes the Firebase account and associated data held in the profile, subcollections and backend-managed collections, including AI caches, usage counters, plans, history, votes, suggestions, notification tokens and technical purchase links. This action is permanent.'],
+['Without access to the app',`Email us from the address linked to the account at ${mail}, with subject “AI Nutrition Coach account deletion”. We may request limited information to verify your identity. Requests are normally handled within one month.`],
+['Possible retention',`Only minimal information may be retained where required by law or necessary for accounting, disputes, security and fraud prevention, for the applicable period. Health data and personal app content are not retained for those purposes. ${privacy}Read the Privacy Policy</a>.`]]],
+es:['Eliminación de la cuenta y los datos','AI Nutrition Coach – Responsable: Leonardo Genna','Idioma',[
+['Eliminar desde la aplicación','<ol><li>Inicia sesión.</li><li>Abre <b>Perfil</b>.</li><li>Selecciona <b>Eliminar cuenta</b>.</li><li>Introduce tu contraseña y confirma.</li></ol>'],
+['Qué se elimina','Se eliminan la cuenta de Firebase y los datos asociados del perfil, subcolecciones y colecciones gestionadas por el backend, incluidas cachés de IA, contadores de uso, planes, historial, votos, sugerencias, tokens de notificación y vínculos técnicos de compra. La operación es definitiva.'],
+['Sin acceso a la aplicación',`Escribe desde el email asociado a la cuenta a ${mail}, con asunto “Eliminación cuenta AI Nutrition Coach”. Podremos solicitar información limitada para verificar tu identidad. Normalmente gestionamos la solicitud en un mes.`],
+['Posible conservación',`Solo podrán conservarse datos mínimos cuando lo exija la ley o sean necesarios para contabilidad, reclamaciones, seguridad y prevención del fraude, durante el período aplicable. No conservamos con esos fines datos de salud ni contenido personal. ${privacy}Consulta la Política de privacidad</a>.`]]],
+fr:['Suppression du compte et des données','AI Nutrition Coach – Responsable : Leonardo Genna','Langue',[
+['Supprimer dans l’application','<ol><li>Connectez-vous.</li><li>Ouvrez <b>Profil</b>.</li><li>Sélectionnez <b>Supprimer le compte</b>.</li><li>Saisissez votre mot de passe et confirmez.</li></ol>'],
+['Données supprimées','La procédure supprime le compte Firebase et les données associées du profil, des sous-collections et des collections gérées par le backend, notamment caches IA, compteurs, plans, historique, votes, suggestions, jetons de notification et liens techniques d’achat. Cette action est définitive.'],
+['Sans accès à l’application',`Écrivez depuis l’adresse liée au compte à ${mail}, avec l’objet « Suppression compte AI Nutrition Coach ». Des informations limitées pourront être demandées pour vérifier votre identité. La demande est normalement traitée sous un mois.`],
+['Conservation éventuelle',`Seules des informations minimales peuvent être conservées si la loi l’exige ou pour la comptabilité, les litiges, la sécurité et la prévention de la fraude, pendant la durée applicable. Les données de santé et contenus personnels ne sont pas conservés à ces fins. ${privacy}Consulter la politique de confidentialité</a>.`]]],
+de:['Löschung von Konto und Daten','AI Nutrition Coach – Verantwortlicher: Leonardo Genna','Sprache',[
+['In der App löschen','<ol><li>Melden Sie sich an.</li><li>Öffnen Sie <b>Profil</b>.</li><li>Wählen Sie <b>Konto löschen</b>.</li><li>Geben Sie Ihr Passwort ein und bestätigen Sie.</li></ol>'],
+['Was gelöscht wird','Gelöscht werden das Firebase-Konto und zugehörige Daten im Profil, in Unterkollektionen und backendverwalteten Sammlungen, einschließlich KI-Caches, Nutzungszähler, Pläne, Verlauf, Stimmen, Vorschläge, Benachrichtigungstoken und technische Kaufverknüpfungen. Der Vorgang ist endgültig.'],
+['Ohne Zugriff auf die App',`Schreiben Sie von der mit dem Konto verknüpften E-Mail-Adresse an ${mail}, Betreff „AI Nutrition Coach Konto löschen“. Zur Identitätsprüfung können begrenzte Angaben angefordert werden. Anfragen werden normalerweise innerhalb eines Monats bearbeitet.`],
+['Mögliche Aufbewahrung',`Minimale Informationen dürfen nur aufbewahrt werden, soweit dies gesetzlich oder für Buchhaltung, Streitigkeiten, Sicherheit und Betrugsprävention erforderlich ist. Gesundheitsdaten und persönliche Inhalte werden dafür nicht gespeichert. ${privacy}Datenschutzerklärung lesen</a>.`]]],
+zh:['删除账户和数据','AI Nutrition Coach – 数据控制者：Leonardo Genna','语言',[
+['在应用内删除','<ol><li>登录账户。</li><li>打开<b>个人资料</b>。</li><li>选择<b>删除账户</b>。</li><li>输入密码并确认。</li></ol>'],
+['删除内容','该程序将删除Firebase账户以及个人资料、子集合和后端管理集合中的关联数据，包括AI缓存、使用计数、计划、历史、投票、建议、通知令牌和技术购买关联。此操作不可撤销。'],
+['无法访问应用时',`请使用账户关联的电子邮件地址发送邮件至 ${mail}，主题为“删除 AI Nutrition Coach 账户”。我们可能要求有限信息以核实身份。请求通常在一个月内处理。`],
+['可能保留的信息',`仅在法律要求或会计、争议、安全及防欺诈所必需时，才会在适用期限内保留最少信息。健康数据和个人应用内容不会因此目的而保留。${privacy}查看隐私政策</a>。`]]],
+pt:['Eliminação da conta e dos dados','AI Nutrition Coach – Responsável: Leonardo Genna','Idioma',[
+['Eliminar na aplicação','<ol><li>Inicie sessão.</li><li>Abra <b>Perfil</b>.</li><li>Selecione <b>Eliminar conta</b>.</li><li>Introduza a palavra-passe e confirme.</li></ol>'],
+['O que é eliminado','São eliminados a conta Firebase e os dados associados do perfil, subcoleções e coleções geridas pelo backend, incluindo caches de IA, contadores, planos, histórico, votos, sugestões, tokens de notificação e ligações técnicas de compra. A operação é definitiva.'],
+['Sem acesso à aplicação',`Envie um email a partir do endereço associado à conta para ${mail}, com o assunto “Eliminar conta AI Nutrition Coach”. Poderemos pedir informações limitadas para verificar a identidade. O pedido é normalmente tratado num mês.`],
+['Possível conservação',`Só podem ser conservadas informações mínimas quando exigidas por lei ou necessárias para contabilidade, litígios, segurança e prevenção de fraude, pelo período aplicável. Dados de saúde e conteúdos pessoais não são conservados para esses fins. ${privacy}Consultar a Política de privacidade</a>.`]]],
+sv:['Radering av konto och data','AI Nutrition Coach – Personuppgiftsansvarig: Leonardo Genna','Språk',[
+['Radera i appen','<ol><li>Logga in.</li><li>Öppna <b>Profil</b>.</li><li>Välj <b>Radera konto</b>.</li><li>Ange lösenordet och bekräfta.</li></ol>'],
+['Vad som raderas','Firebase-kontot och tillhörande data i profilen, underkollektioner och backendhanterade samlingar raderas, inklusive AI-cache, användningsräknare, planer, historik, röster, förslag, notistoken och tekniska köplänkar. Åtgärden är permanent.'],
+['Utan åtkomst till appen',`Skicka e-post från adressen som är kopplad till kontot till ${mail}, med ämnet ”Radera AI Nutrition Coach-konto”. Vi kan begära begränsad information för identitetskontroll. Begäran hanteras normalt inom en månad.`],
+['Möjlig lagring',`Endast minsta nödvändiga information får behållas när lagen kräver det eller för bokföring, tvister, säkerhet och bedrägeribekämpning under tillämplig tid. Hälsodata och personligt innehåll behålls inte för dessa ändamål. ${privacy}Läs integritetspolicyn</a>.`]]],
+ar:['حذف الحساب والبيانات','AI Nutrition Coach – المتحكم: Leonardo Genna','اللغة',[
+['الحذف من التطبيق','<ol><li>سجّل الدخول.</li><li>افتح <b>الملف الشخصي</b>.</li><li>اختر <b>حذف الحساب</b>.</li><li>أدخل كلمة المرور وأكّد.</li></ol>'],
+['ما يتم حذفه','تحذف العملية حساب Firebase والبيانات المرتبطة في الملف والمجموعات الفرعية والمجموعات التي يديرها الخادم، بما فيها ذاكرة الذكاء الاصطناعي وعدادات الاستخدام والخطط والسجل والتصويتات والاقتراحات ورموز الإشعار وروابط الشراء التقنية. العملية نهائية.'],
+['من دون الوصول إلى التطبيق',`أرسل بريدًا من العنوان المرتبط بالحساب إلى ${mail} بعنوان “حذف حساب AI Nutrition Coach”. قد نطلب معلومات محدودة للتحقق من الهوية. تتم معالجة الطلب عادة خلال شهر.`],
+['الاحتفاظ المحتمل',`لا يُحتفظ إلا بالحد الأدنى من المعلومات عندما يفرض القانون ذلك أو لأغراض المحاسبة والنزاعات والأمن ومنع الاحتيال، وللمدة المطبقة. لا تُحتفظ بيانات الصحة والمحتويات الشخصية لهذه الأغراض. ${privacy}اطلع على سياسة الخصوصية</a>.`]]],
+ru:['Удаление аккаунта и данных','AI Nutrition Coach – Оператор: Leonardo Genna','Язык',[
+['Удаление в приложении','<ol><li>Войдите в аккаунт.</li><li>Откройте <b>Профиль</b>.</li><li>Выберите <b>Удалить аккаунт</b>.</li><li>Введите пароль и подтвердите.</li></ol>'],
+['Что удаляется','Удаляются аккаунт Firebase и связанные данные профиля, подколлекций и серверных коллекций, включая кэш ИИ, счётчики использования, планы, историю, голоса, предложения, токены уведомлений и технические связи покупок. Операция необратима.'],
+['Без доступа к приложению',`Напишите с адреса, связанного с аккаунтом, на ${mail} с темой «Удаление аккаунта AI Nutrition Coach». Для проверки личности могут потребоваться ограниченные сведения. Обычно запрос выполняется в течение месяца.`],
+['Возможное хранение',`Минимальные сведения могут храниться только по требованию закона или для бухгалтерии, споров, безопасности и предотвращения мошенничества в течение применимого срока. Данные о здоровье и личный контент для этих целей не сохраняются. ${privacy}Политика конфиденциальности</a>.`]]],
+ja:['アカウントとデータの削除','AI Nutrition Coach – 管理者：Leonardo Genna','言語',[
+['アプリから削除','<ol><li>アカウントにログインします。</li><li><b>プロフィール</b>を開きます。</li><li><b>アカウントを削除</b>を選びます。</li><li>パスワードを入力して確認します。</li></ol>'],
+['削除されるもの','Firebaseアカウントと、プロフィール、サブコレクション、バックエンド管理コレクション内の関連データ（AIキャッシュ、利用回数、プラン、履歴、投票、提案、通知トークン、技術的な購入リンクを含む）が削除されます。操作は取り消せません。'],
+['アプリにアクセスできない場合',`アカウントに登録したメールアドレスから ${mail} へ、件名「AI Nutrition Coach アカウント削除」でご連絡ください。本人確認のため最小限の情報を求める場合があります。通常1か月以内に処理します。`],
+['保存される可能性のある情報',`法令または会計、紛争、安全、不正防止に必要な場合に限り、適用期間中、最小限の情報を保存することがあります。健康データや個人的コンテンツはこれらの目的では保存しません。${privacy}プライバシーポリシーを見る</a>。`]]]};
+const langSelect=document.getElementById('lang'),titleElement=document.getElementById('title'),subtitleElement=document.getElementById('subtitle'),labelElement=document.getElementById('label'),contentElement=document.getElementById('content');
+function render(c){const p=P[c]||P.it;document.documentElement.lang=c;document.documentElement.dir=c==='ar'?'rtl':'ltr';langSelect.value=c;titleElement.textContent=p[0];subtitleElement.textContent=p[1];labelElement.textContent=p[2];document.title=p[0]+' | AI Nutrition Coach';contentElement.innerHTML=p[3].map(x=>`<section class="card"><h2>${x[0]}</h2><div>${x[1]}</div></section>`).join('');localStorage.setItem('legalLanguage',c)}
+const saved=localStorage.getItem('legalLanguage'),browser=(navigator.language||'it').slice(0,2).toLowerCase();render(P[saved]?saved:(P[browser]?browser:'it'));langSelect.onchange=e=>render(e.target.value);
+</script></body></html>
